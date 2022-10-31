@@ -1,2 +1,2 @@
 # Leetcode
-Solving LeetCode problem on daily basis
+Solving LeetCode problem in python on daily basis
