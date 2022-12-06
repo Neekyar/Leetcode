@@ -1,0 +1,59 @@
+---
+date: 2022.12.06
+title: 19. Remove Nth Node From End of List
+runtime: 58.18 # faster than (in %)
+memory usage: 71.72    # less than (in %)
+---
+## Description
+Given the head of a linked list, remove the nth node from the end of the list and return its head.
+
+**Example 1:**
+
+![https://assets.leetcode.com/uploads/2020/10/03/remove_ex1.jpg](https://assets.leetcode.com/uploads/2020/10/03/remove_ex1.jpg)
+```
+Input: head = [1,2,3,4,5], n = 2
+Output: [1,2,3,5]
+```
+**Example 2:**
+```
+Input: head = [1], n = 1
+Output: []
+```
+**Example 3:**
+```
+Input: head = [1,2], n = 1
+Output: [1]
+```
+
+**Constraints:**
+
+The number of nodes in the list is `sz`.
+- `1 <= sz <= 30`
+- `0 <= Node.val <= 100`
+- `1 <= n <= sz`
+- 
+## Approach 1: Two pointers
+- Time complexity: `O(n)`
+- Space complexity: `O(1)` <br />
+where `n` is the number of nodes
+
+```python
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
+        offset = head
+        dummy = cur = ListNode(0,head) 
+        for i in range (n):
+            offset = offset.next
+        
+        while offset:
+            offset = offset.next
+            cur = cur.next
+
+        cur.next = cur.next.next
+
+        return dummy.next
