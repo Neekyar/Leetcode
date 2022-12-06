@@ -31,7 +31,6 @@ The number of nodes in the list is `sz`.
 - `1 <= sz <= 30`
 - `0 <= Node.val <= 100`
 - `1 <= n <= sz`
-- 
 ## Approach 1: Two pointers
 - Time complexity: `O(n)`
 - Space complexity: `O(1)` <br />
