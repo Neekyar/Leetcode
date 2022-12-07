@@ -1,8 +1,9 @@
 ---
 date: 2022.12.06
-title: 19. Remove Nth Node From End of List
-runtime: 58.18 # faster than (in %)
-memory usage: 71.72    # less than (in %)
+title: 938. Range Sum of BST
+runtime: 77.42 # faster than (in %)
+memory usage: 17.70 # less than (in %)
+
 ---
 ## Description
 Given the `root` node of a binary search tree and two integers `low` and `high`, return *the sum of values of all nodes with a value in the **inclusive** range* `[low, high]`.
