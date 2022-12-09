@@ -67,7 +67,7 @@ class Solution:
 ```
 
 ## 2nd Approach : Top-bottom (pre-order DFS)
-We Keep track of the min and max value of the ancestor nodes as we visit each subtree.
+We keep track of the min and max value of the ancestor nodes as we visit each subtree.
 
 - update the curMin` and `curMax` value by checking the current node value
 - update `ans` value 
