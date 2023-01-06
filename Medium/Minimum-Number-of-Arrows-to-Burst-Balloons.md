@@ -2,7 +2,7 @@
 date: 2022.01.05
 title: 452. Minimum Number of Arrows to Burst Balloons
 runtime: 44.24 # faster than (in %)
-memory usage: 6976 # less than (in %)
+memory usage: 69.76 # less than (in %)
 
 ---
 
